@@ -1,0 +1,217 @@
+@import "materialize";
+@import "styles/footer";
+
+
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.content {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  flex-wrap: wrap;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    flex: 1 0 100%;
+  }
+  div:first-child {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+}
+
+.titleContainer {
+  padding-left: 16%;
+  margin-top: -50px;
+  @media screen and (max-width: 600px) {
+    margin-top: 50px;
+  }
+}
+
+.subtitle {
+  padding-right: 30%;
+  @media screen and (max-width: 600px) {
+    padding-right: 15%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding-right: 15%;
+    p {
+      font-size: 200%;
+    }
+  }
+}
+
+.resumeButton {
+  @media screen and (max-width: 600px) {
+    margin-top: 50px;
+  }
+  a {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      width: 40%;
+      height: auto;
+      p {
+        padding-top: 20px;
+        font-size: 200%;
+      }
+    }
+  }
+}
+
+.title {
+  flex: 1 0 30%;
+  width: 30%;
+  -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg); /* Standard syntax */
+}
+
+.title h1 {
+  font-size: 100pt;
+  @media screen and (max-width: 600px) {
+    font-size: 50pt;
+  }
+  color: black;
+  .fullWord {
+    .customFirstLetter {
+      color: #008AFF;
+      animation: colorChange 1.5s ease;
+    }
+    display: block;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em; /* Adjust as needed */
+  }
+}
+
+.firstName {
+  .fullWord {
+    animation:
+      fail-typing 1.5s steps(10, end),
+      typing .75s steps(15, end) 1.5s,
+      blink-caret .75s step-end 3;
+  }
+}
+
+.lastName {
+  width: 85%;
+  .fullWord {
+    padding-left: 70px;
+    @media screen and (max-width: 600px) {
+      padding-left: 30px;
+    }
+    visibility: hidden;
+    animation:
+      last-typing .75s steps(15, end) 2.25s,
+      blink-caret .75s step-end 2.25s infinite;
+  }
+}
+
+/* The typing effect */
+@keyframes colorChange {
+  0% {
+    color: black;
+  }
+  99% {
+    color: black;
+  }
+  100% {
+    color: #008AFF;
+  }
+}
+
+@keyframes fail-typing {
+  0% {
+    width: 0
+  }
+  30% {
+    width: 63%
+  }
+  70% {
+    width: 63%
+  }
+  100% {
+    color: black !important;
+    width: 0%
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0
+  }
+  100% {
+    width: 100%
+  }
+}
+
+@keyframes last-typing {
+  0% {
+    width: 0
+  }
+  100% {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+    visibility: visible;
+  }
+  50% { border-color: #008AFF; }
+}
+
+.myBlue {
+  &.background {
+    background-color: #008AFF;
+  }
+  &.text {
+    background-color: #008AFF;
+  }
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+    font-family: 'Futura', "Trebuchet MS", 'Arial', 'sans-serif';
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font: 16px Sans-Serif;
+}
+h1 {
+  margin: 0 0 20px 0;
+  color: #008AFF;
+}
+p {
+  margin: 0 0 20px 0;
+}
