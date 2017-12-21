@@ -14,13 +14,14 @@
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Contact Us</a></li>
+      <ul id="menu" class="right hide-on-med-and-down">
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -46,35 +47,48 @@
 
 
   <div class="container">
-    <div class="section">
+    <div id="services" class="section scrollspy">
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">crop</i></h2>
-            <h5 class="center">Crop Consulting</h5>
+        <div id='mainContent'>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">crop</i></h2>
+              <h5 class="center">Crop Consulting</h5>
 
-            <p class="light">The goal of our Crop Consulting Service is to provide the client with the information needed to make better decisions and have a more profitable operation.</p>
+              <p class="light">The goal of our Crop Consulting Service is to provide the client with the information needed to make better decisions and have a more profitable operation.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">colorize</i></h2>
+              <h5 class="center">Soil Testing</h5>
+
+              <p class="light">By soil sampling your fields to determine the deficiencies and excesses already present in the soil, you can make smarter decisions about fertilizer applications and better allocate your fertilizer dollars where they will have the greatest impact. </p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">business</i></h2>
+              <h5 class="center">Regulations</h5>
+
+              <p class="light">Government regulations are becoming a bigger and bigger part of farming each year. Rosetree Consulting can help keep your operation in compliance.</p>
+            </div>
           </div>
         </div>
+        <div id='crops'>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">colorize</i></h2>
-            <h5 class="center">Soil Testing</h5>
-
-            <p class="light">By soil sampling your fields to determine the deficiencies and excesses already present in the soil, you can make smarter decisions about fertilizer applications and better allocate your fertilizer dollars where they will have the greatest impact. </p>
-          </div>
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">business</i></h2>
-            <h5 class="center">Regulations</h5>
+        <div id='soil'>
 
-            <p class="light">Government regulations are becoming a bigger and bigger part of farming each year. Rosetree Consulting can help keep your operation in compliance.</p>
-          </div>
+        </div>
+
+        <div id='regulations'>
+
         </div>
       </div>
 
@@ -94,7 +108,7 @@
   </div>
 
   <div class="container">
-    <div class="section">
+    <div id="contact" class="section scrollspy">
 
       <div class="row">
         <div class="col s12 center">
