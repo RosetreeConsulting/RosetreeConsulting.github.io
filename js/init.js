@@ -30,14 +30,19 @@
       $('#cropButton').on('click',function(){
         $('#mainContent').hide();
         $('#cropContent').show();
-        // if ($('#1').css('display')!='none'){
-        //   $('#2').html('Here is my dynamic content').show().siblings('div').hide();
-        // } else if ($('#2').css('display')!='none'){
-        //   $('#1').show().siblings('div').hide();
-        // }
       });
 
-      $('#backButton').on('click', function() {
+      $('#soilButton').on('click',function(){
+        $('#mainContent').hide();
+        $('#soilContent').show();
+      });
+
+      $('#regulationButton').on('click',function(){
+        $('#mainContent').hide();
+        $('#regulationContent').show();
+      });
+
+      $('.backButton').on('click', function() {
         $('#mainContent').show();
         if ($('#cropContent').css('display')!='none'){
           $('#cropContent').hide();

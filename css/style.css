@@ -2,6 +2,12 @@
 .startContent {
   display: none; }
 
+#services {
+  height: 500px; }
+  @media only screen and (max-width: 600px) {
+    #services {
+      height: auto; } }
+
 nav ul a,
 nav .brand-logo {
   color: #444; }
