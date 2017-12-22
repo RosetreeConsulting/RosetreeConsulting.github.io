@@ -28,29 +28,49 @@
       });
 
       $('#cropButton').on('click',function(){
-        $('#mainContent').hide();
-        $('#cropContent').show();
+        $('#mainContent').fadeOut(500);
+
+        setTimeout(function() {
+          $('#mainContent').hide();
+          $('#cropContent').fadeIn(500);
+        }, 500);
+
       });
 
       $('#soilButton').on('click',function(){
-        $('#mainContent').hide();
-        $('#soilContent').show();
+        $('#mainContent').fadeOut(500);
+
+        setTimeout(function() {
+          $('#mainContent').hide();
+          $('#soilContent').fadeIn(500);
+        }, 500);
       });
 
       $('#regulationButton').on('click',function(){
-        $('#mainContent').hide();
-        $('#regulationContent').show();
+        $('#mainContent').fadeOut(500);
+
+        setTimeout(function() {
+          $('#mainContent').hide();
+          $('#regulationContent').fadeIn(500);
+        }, 500);
       });
 
       $('.backButton').on('click', function() {
-        $('#mainContent').show();
+        var currentContent;
         if ($('#cropContent').css('display')!='none'){
-          $('#cropContent').hide();
+          currentContent = $('#cropContent');
         } else if ($('#soilContent').css('display')!='none'){
-          $('#soilContent').hide();
+          currentContent = $('#soilContent');
         } else if ($('#regulationContent').css('display')!='none'){
-          $('#regulationContent').hide();
+          currentContent = $('#regulationContent');
         }
+
+        currentContent.fadeOut(500);
+
+        setTimeout(function() {
+          currentContent.hide();
+          $('#mainContent').fadeIn(500);
+        }, 500);
       });
 
   }); // end of document ready
