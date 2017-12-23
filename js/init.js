@@ -31,6 +31,10 @@
         $('#mainContent').fadeOut(500);
 
         setTimeout(function() {
+          if ($(window).width() < 960) {
+            window.location.hash = '';
+            window.location.hash = '#services';
+          }
           $('#mainContent').hide();
           $('#cropContent').fadeIn(500);
         }, 500);
@@ -41,6 +45,10 @@
         $('#mainContent').fadeOut(500);
 
         setTimeout(function() {
+          if ($(window).width() < 960) {
+            window.location.hash = '';
+            window.location.hash = '#services';
+          }
           $('#mainContent').hide();
           $('#soilContent').fadeIn(500);
         }, 500);
@@ -50,6 +58,10 @@
         $('#mainContent').fadeOut(500);
 
         setTimeout(function() {
+          if ($(window).width() < 960) {
+            window.location.hash = '';
+            window.location.hash = '#services';
+          }
           $('#mainContent').hide();
           $('#regulationContent').fadeIn(500);
         }, 500);
@@ -68,6 +80,10 @@
         currentContent.fadeOut(500);
 
         setTimeout(function() {
+          if ($(window).width() < 960) {
+            window.location.hash = '';
+            window.location.hash = '#services';
+          }
           currentContent.hide();
           $('#mainContent').fadeIn(500);
         }, 500);

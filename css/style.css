@@ -8,6 +8,16 @@
     #services {
       height: auto; } }
 
+.myLightGreen.text {
+  color: #C0D4C1; }
+.myLightGreen.background {
+  background-color: #C0D4C1; }
+
+.myDarkGreen.text {
+  color: #034D2F; }
+.myDarkGreen.background {
+  background-color: #034D2F; }
+
 nav ul a,
 nav .brand-logo {
   color: #444; }
