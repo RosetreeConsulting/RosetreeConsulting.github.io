@@ -69,9 +69,21 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
     margin-top: -10px;
     @media only screen and (max-width : 600px) {
+      display: none;
       margin-top: 0;
       width: 30%;
     }
+}
+
+.sub-logo {
+  font-size: 3em;
+  text-shadow: 2px 0 0 #034D2F, -2px 0 0 #034D2F, 0 2px 0 #034D2F, 0 -2px 0 #034D2F, 1px 1px #034D2F, -1px -1px 0 #034D2F, 1px -1px 0 #034D2F, -1px 1px 0 #034D2F;
+  @media only screen and (max-width : 600px) {
+    font-size: 2em;
+    br {
+      display: block;
+    }
+  }
 }
 
 .startContent {
