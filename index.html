@@ -11,6 +11,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+  <script src="https://use.fontawesome.com/ededb13e1f.js"></script>
 
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
@@ -31,8 +32,8 @@
       </ul>
 
       <ul id="nav-mobile" class="side-nav myLightGreen background">
-        <li><a class="myDarkGreen text" href="#services">Our Services</a></li>
-        <li><a class="myDarkGreen text" href="#contact">Contact Us</a></li>
+        <li><a class="mobile-menu-item myDarkGreen text" href="#services">Our Services</a></li>
+        <li><a class="mobile-menu-item myDarkGreen text" href="#contact">Contact Us</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons myLightGreen text">menu</i></a>
     </div>
@@ -43,7 +44,7 @@
       <div class="container">
         <br><br>
         <h1 class="header main-logo center text-lighten-2">
-          Rosetree <br /> <img class="main-logo-picture" src="images/logo.png" alt="logo"> Consulting
+          Rosetree<br /> <img class="main-logo-picture" src="images/logo.png" alt="logo"> Consulting
         </h1>
         <div class="row center">
           <h5 class="sub-logo header col s12 light">Agricultural &middot; Environmental</h5>
@@ -181,7 +182,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">Independent Agricultural & Environmental Consulting</h5>
+          <h5 class="header mid-title col s12 light">Independent Agricultural<br /> & <br />Environmental Consulting</h5>
         </div>
       </div>
     </div>
@@ -196,28 +197,33 @@
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Contact Us</h4>
           <p class="left-align light">
-            Serving Eastern & Central Pennsylvania as well as most parts of New Jersey, Rosetree Consulting is happy to discuss any agricultural or environmental concern you may have about your operation.<br />
-            20 Glenbrook Drive<br />
-            Shillington, Pennsylvania 19607<br />
-            United States<br />
-            484.788.7263
+            <div class="row">
+              <div class="col s12 m6 left-align">
+                Serving Eastern & Central Pennsylvania as well as most parts of New Jersey, Rosetree Consulting is happy to discuss any agricultural or environmental concern you may have about your operation.<br />
+              </div>
+
+              <div class="col s12 m6 right-align">
+                20 Glenbrook Drive<br />
+                Shillington, Pennsylvania 19607<br />
+                United States<br />
+                484.788.7263
+              </div>
+            </div>
           </p>
           <div class="row">
             <form class="col s12">
               <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12 m6">
                   <input id="input_text" type="text">
                   <label for="input_text">Name</label>
                 </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12 m6">
                   <input id="input_text" type="text">
                   <label for="input_text">Phone</label>
                 </div>
               </div>
               <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12">
                   <input id="email" type="email" class="validate">
                   <label for="email" data-error="Invalid Email" data-success="Valid Email">Email</label>
                 </div>
@@ -226,6 +232,11 @@
                 <div class="input-field col s12">
                   <textarea id="textarea1" class="materialize-textarea" data-length="500"></textarea>
                   <label for="textarea1">Message</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  Send!
                 </div>
               </div>
             </form>
@@ -257,12 +268,20 @@
         </div>
         <div class="col l4 s12">
           <h5 class="myLightGreen text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+          <div class="links">
+            <ul class="icons">
+              <li>
+                <a href="mailto:RosetreeConsulting?Subject=Contact%20from%Website" class="icon">
+                  <i class="fa fa-envelope"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/RTCEric/" class="icon" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

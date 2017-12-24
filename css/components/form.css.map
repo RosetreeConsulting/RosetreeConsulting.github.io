@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iBAAiB;AACjB,kBAAmB;EAClB,KAAK,EAAE,OAAO;;AAEf,uBAAuB;AACvB,iHAAmH;EAClH,KAAK,EAAE,kBAAkB;;AAE1B,iCAAiC;AACjC,yFAA0F;EACzF,aAAa,EAAE,4BAA4B;EAC3C,UAAU,EAAE,4BAA4B;;AAEzC,iBAAiB;AAUjB,6BAA6B;AAC7B,2BAA4B;EAC3B,KAAK,EAAE,kBAAkB",
+"sources": ["../../scss/components/form.scss"],
+"names": [],
+"file": "form.css"
+}

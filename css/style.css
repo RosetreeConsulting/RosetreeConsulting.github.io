@@ -1,3 +1,68 @@
+.icons {
+  margin-bottom: 2em;
+  display: inline-block; }
+  @media screen and (max-width: 600px) {
+    .icons {
+      display: none; } }
+  .icons li {
+    display: inline-block;
+    padding-right: 2.5em; }
+    .icons li:last-child {
+      padding-right: 0; }
+  .icons a {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    text-decoration: none;
+    color: #525659;
+    border: 2px solid #999;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    line-height: 60px; }
+    .icons a .fa {
+      font-size: 1.6em; }
+    .icons a:hover, .icons a:active {
+      color: #034D2F;
+      border-color: transparent; }
+      .icons a:hover.icon, .icons a:active.icon {
+        background-color: #C0D4C1; }
+      .icons a:hover.icon-search, .icons a:active.icon-search {
+        background-color: white; }
+      .icons a:hover.icon-email, .icons a:active.icon-email {
+        background-color: grey; }
+      .icons a:hover.icon-github, .icons a:active.icon-github {
+        background-color: #222; }
+      .icons a:hover.icon-facebook, .icons a:active.icon-facebook {
+        background-color: #3765A3; }
+      .icons a:hover.icon-twitter, .icons a:active.icon-twitter {
+        background-color: #5EA9DD; }
+      .icons a:hover.icon-instagram, .icons a:active.icon-instagram {
+        background-color: #323232; }
+      .icons a:hover.icon-linkedin, .icons a:active.icon-linkedin {
+        background-color: #0274B3; }
+
+/* label color */
+.input-field label {
+  color: #9e9e9e; }
+
+/* label focus color */
+.input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, textarea:focus + label {
+  color: #034D2F !important; }
+
+/* label underline focus color */
+.input-field input[type=text]:focus, .input-field input[type=email]:focus, textarea:focus {
+  border-bottom: 1px solid #034D2F !important;
+  box-shadow: 0 1px 0 0 #034D2F !important; }
+
+/* valid color */
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #034D2F !important; }
+
 /* Custom Stylesheet */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Goudy Bookletter 1911', serif; }
@@ -11,6 +76,23 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 600px) {
   #bottom-section {
     min-height: 30vh; } }
+
+.mid-title {
+  font-size: 2.5em;
+  text-shadow: 2px 0 0 #034D2F, -2px 0 0 #034D2F, 0 2px 0 #034D2F, 0 -2px 0 #034D2F, 1px 1px #034D2F, -1px -1px 0 #034D2F, 1px -1px 0 #034D2F, -1px 1px 0 #034D2F; }
+  .mid-title br {
+    display: none; }
+  @media only screen and (max-width: 600px) {
+    .mid-title {
+      font-size: 2em;
+      margin-top: -10%; }
+      .mid-title br {
+        display: block; } }
+
+.mobile-menu-item {
+  font-size: 1.5em !important;
+  padding-top: 5% !important;
+  padding-bottom: 5% !important; }
 
 .myTint .after {
   position: absolute;
