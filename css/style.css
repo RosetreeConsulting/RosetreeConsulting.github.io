@@ -1,4 +1,14 @@
 /* Custom Stylesheet */
+#index-banner {
+  height: 90vh; }
+
+@media only screen and (max-width: 600px) {
+  #bottom-section {
+    min-height: 30vh; } }
+
+.main-logo {
+  width: 100%; }
+
 .startContent {
   display: none; }
 
@@ -7,6 +17,16 @@
   @media only screen and (max-width: 600px) {
     #services {
       height: auto; } }
+
+.myButton {
+  color: #C0D4C1;
+  background-color: #034D2F; }
+
+.myButton:hover {
+  background-color: #07af6b; }
+
+.myButton:focus {
+  background-color: #b9fce1; }
 
 .myLightGreen.text {
   color: #C0D4C1; }
@@ -17,6 +37,21 @@
   color: #034D2F; }
 .myDarkGreen.background {
   background-color: #034D2F; }
+
+.white-background {
+  background-color: white; }
+
+.footer-picture {
+  width: 30%;
+  height: 30%; }
+
+.nav-logo {
+  width: auto;
+  height: 50px;
+  margin-top: 6px; }
+  @media only screen and (max-width: 992px) {
+    .nav-logo {
+      margin-top: 3px; } }
 
 nav ul a,
 nav .brand-logo {

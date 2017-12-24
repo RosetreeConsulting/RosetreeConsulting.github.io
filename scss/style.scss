@@ -1,5 +1,23 @@
 /* Custom Stylesheet */
 
+body {
+  // background-color: #034D2F;
+}
+
+#index-banner {
+  height: 90vh;
+}
+
+#bottom-section {
+  @media only screen and (max-width : 600px) {
+    min-height: 30vh;
+  }
+}
+
+.main-logo {
+  width: 100%;
+}
+
 .startContent {
   display: none;
 }
@@ -9,6 +27,19 @@
   @media only screen and (max-width : 600px) {
     height: auto;
   }
+}
+
+.myButton {
+  color: #C0D4C1;
+  background-color: #034D2F;
+}
+
+.myButton:hover{
+  background-color: lighten(#034D2F, 20%);
+}
+
+.myButton:focus{
+  background-color: lighten(#034D2F, 70%);
 }
 
 .myLightGreen {
@@ -26,6 +57,25 @@
   }
   &.background {
     background-color: #034D2F;
+  }
+}
+
+.white-background {
+  background-color: white;
+  // width: 100%;
+}
+
+.footer-picture {
+  width: 30%;
+  height: 30%;
+}
+
+.nav-logo {
+  width: auto;
+  height: 50px;
+  margin-top: 6px;
+  @media only screen and (max-width : 992px) {
+    margin-top: 3px;
   }
 }
 
