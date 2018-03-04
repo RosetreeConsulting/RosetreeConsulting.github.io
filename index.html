@@ -228,23 +228,23 @@
                 <form id="contactform" class="col s12" method="POST">
                   <div class="row">
                     <div class="input-field col s12 m6">
-                      <input id="input_text" type="text">
+                      <input id="input_text" name="name" type="text">
                       <label for="input_text">Name</label>
                     </div>
                     <div class="input-field col s12 m6">
-                      <input id="input_text" type="text">
+                      <input id="input_text" name="phone" type="text">
                       <label for="input_text">Phone</label>
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-field col s12">
-                      <input id="email" type="email" class="validate">
+                      <input id="email" type="email" name="_replyto" class="validate">
                       <label for="email" data-error="Invalid Email" data-success="Valid Email">Email</label>
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-field col s12">
-                      <textarea id="textarea1" class="materialize-textarea" data-length="500"></textarea>
+                      <textarea id="textarea1" name="message" class="materialize-textarea" data-length="500"></textarea>
                       <label for="textarea1">Message</label>
                     </div>
                   </div>
