@@ -69,7 +69,7 @@
       <!--   Icon Section   -->
       <div class="row">
         <div id='mainContent'>
-          <div class="col s12 m4">
+          <div class="col s12 m6">
             <div class="icon-block">
               <h2 class="center brown-text"><i class="material-icons">crop</i></h2>
               <h5 class="center">Crop Consulting</h5>
@@ -79,7 +79,7 @@
             </div>
           </div>
 
-          <div class="col s12 m4">
+          <div class="col s12 m6">
             <div class="icon-block">
               <h2 class="center brown-text"><i class="material-icons">colorize</i></h2>
               <h5 class="center">Soil Testing</h5>
@@ -89,7 +89,17 @@
             </div>
           </div>
 
-          <div class="col s12 m4">
+          <div class="col s12 m6">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">business</i></h2>
+              <h5 class="center">Regulations</h5>
+
+              <p class="light">Government regulations are becoming a bigger and bigger part of farming each year. Rosetree Consulting can help keep your operation in compliance.</p>
+              <a id="regulationButton" class="waves-effect waves-light myButton btn">More...</a>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
             <div class="icon-block">
               <h2 class="center brown-text"><i class="material-icons">business</i></h2>
               <h5 class="center">Regulations</h5>
@@ -196,50 +206,66 @@
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Contact Us</h4>
-          <p class="left-align light">
-            <div class="row">
-              <div class="col s12 m6 left-align">
-                Serving Eastern & Central Pennsylvania as well as most parts of New Jersey, Rosetree Consulting is happy to discuss any agricultural or environmental concern you may have about your operation.<br />
-              </div>
+          <div class="row">
+            <div class="col s12 m6">
+              <p class="left-align light">
+                <div class="row">
+                  <div class="col s12 m6 left-align">
+                    Serving Eastern & Central Pennsylvania as well as most parts of New Jersey, Rosetree Consulting is happy to discuss any agricultural or environmental concern you may have about your operation.<br />
+                  </div>
 
-              <div class="col s12 m6 right-align">
-                20 Glenbrook Drive<br />
-                Shillington, Pennsylvania 19607<br />
-                United States<br />
-                484.788.7263
+                  <div class="col s12 m6 right-align">
+                    20 Glenbrook Drive<br />
+                    Shillington, Pennsylvania 19607<br />
+                    United States<br />
+                    484.788.7263
+                  </div>
+                </div>
+              </p>
+            </div>
+            <div class="col s12 m6 left-align">
+              <div class="row">
+                <form id="contactform" class="col s12" method="POST">
+                  <div class="row">
+                    <div class="input-field col s12 m6">
+                      <input id="input_text" type="text">
+                      <label for="input_text">Name</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                      <input id="input_text" type="text">
+                      <label for="input_text">Phone</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="email" class="validate">
+                      <label for="email" data-error="Invalid Email" data-success="Valid Email">Email</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea id="textarea1" class="materialize-textarea" data-length="500"></textarea>
+                      <label for="textarea1">Message</label>
+                    </div>
+                  </div>
+                  <p class="antispam">Leave this empty: <input type="text" id="url" name="_gotcha" /></p>
+                  <input type="hidden" name="_subject" value="Contact from Website!" />
+                  <!-- <input type="hidden" name="_next" value="/#contact" /> -->
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input type="submit" class="waves-effect waves-light myButton btn" value="submit" onClick="return empty()" />
+                    </div>
+                  </div>
+                </form>
+                <script>
+                  var first = "danielgraf.developer";
+                  var last = "gmail.com";
+
+                  var contactform =  document.getElementById('contactform');
+                  contactform.setAttribute('action', 'https://formspree.io/' + first + '@' + last);
+                </script>
               </div>
             </div>
-          </p>
-          <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s12 m6">
-                  <input id="input_text" type="text">
-                  <label for="input_text">Name</label>
-                </div>
-                <div class="input-field col s12 m6">
-                  <input id="input_text" type="text">
-                  <label for="input_text">Phone</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email" data-error="Invalid Email" data-success="Valid Email">Email</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <textarea id="textarea1" class="materialize-textarea" data-length="500"></textarea>
-                  <label for="textarea1">Message</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  Send!
-                </div>
-              </div>
-            </form>
           </div>
         </div>
       </div>
@@ -271,9 +297,12 @@
           <div class="links">
             <ul class="icons">
               <li>
-                <a href="mailto:RosetreeConsulting?Subject=Contact%20from%Website" class="icon">
-                  <i class="fa fa-envelope"></i>
-                </a>
+                <script type="text/javascript">
+                  var first = "danielgraf.developer";
+                  var last = "gmail.com";
+
+                  document.write('<a href="mailto:'+first + '@' + last+'?Subject=Contact%20from%20Website" class="icon"><i class="fa fa-envelope"></i><\/a>');
+                </script>
               </li>
               <li>
                 <a href="https://www.facebook.com/RTCEric/" class="icon" target="_blank">
