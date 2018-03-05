@@ -91,3 +91,33 @@
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+
+$(document).ready(function() {
+    // $('#submit').attr("disabled", true);
+    // $('#submit-div > i').addClass("disabled");
+    // $('#submit-div > i').removeClass("disabled");
+
+
+    $('form').find('input, textarea').keyup(function() {
+
+      var empty = false;
+
+      $('form').find('input, textarea').each(function() {
+        if (($(this).attr('id')=='input_text') || ($(this).attr('id')=='email') || ($(this).attr('id')=='textarea1')) {
+          if ($(this).val() == '') {
+            empty = true;
+          }
+        }
+      });
+
+      if (empty) {
+        $('#submit').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+        $('#submit-div > i').addClass("disabled");
+      } else {
+        $('#submit').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+        $('#submit-div > i').removeClass("disabled");
+      }
+    });
+
+});

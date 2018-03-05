@@ -250,10 +250,10 @@
                   </div>
                   <p class="antispam">Leave this empty: <input type="text" id="url" name="_gotcha" /></p>
                   <input type="hidden" name="_subject" value="Contact from Website!" />
-                  <!-- <input type="hidden" name="_next" value="/#contact" /> -->
+                  <input type="hidden" name="_next" value="www.danielwgraf.com/rosetree/#contact" />
                   <div class="row">
-                    <div class="input-field col s12">
-                      <input type="submit" class="waves-effect waves-light myButton btn" value="submit" onClick="return empty()" />
+                    <div id="submit-div" class="input-field col s12">
+                      <input type="submit" id="submit" class="waves-effect waves-light myButton disabled btn" value="submit" disabled="disabled" />
                     </div>
                   </div>
                 </form>
