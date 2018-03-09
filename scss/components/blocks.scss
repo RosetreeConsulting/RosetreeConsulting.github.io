@@ -2,5 +2,43 @@
   box-shadow: 0px 0px 70px 0px rgba(3,77,47, 0.45);
   // box-shadow: 0px 0px 70px 0px rgba(192,212,193, 0.45);
   padding: 2rem;
-  margin: 2rem 2rem;
+  margin: 1rem 1rem;
+}
+
+.contentButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentTitle {
+  color: #034D2F;
+}
+
+.contentText {
+  color: #034D2F;
+  font-size: 2em;
+  margin: 0.5em;
+  // text-shadow: 2px 0 0 #034D2F, -2px 0 0 #034D2F, 0 2px 0 #034D2F, 0 -2px 0 #034D2F, 1px 1px #034D2F, -1px -1px 0 #034D2F, 1px -1px 0 #034D2F, -1px 1px 0 #034D2F;
+  @media only screen and (max-width : 600px) {
+    font-size: 2em;
+  }
+}
+
+.contentIcon {
+  margin: 0;
+}
+
+.mobileServiceHeader {
+  display: none;
+  @media only screen and (max-width : 1000px) {
+    display: block;
+  }
+}
+
+.desktopServiceHeader {
+  display: block;
+  @media only screen and (max-width : 1000px) {
+    display: none;
+  }
 }

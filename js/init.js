@@ -6,6 +6,7 @@
     $('.modal').modal();
     // Used for Mobile Scroll
     $('.scrollspy').scrollSpy(options={scrollOffset:0});
+    $('.contact-scrollspy').scrollSpy(options={scrollOffset:150});
     //Desktop Scroll
     $("#menu li a[href^='#']").on('click', function(e) {
 

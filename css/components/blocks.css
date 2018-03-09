@@ -1,6 +1,37 @@
 .icon-block {
   box-shadow: 0px 0px 70px 0px rgba(3, 77, 47, 0.45);
   padding: 2rem;
-  margin: 2rem 2rem; }
+  margin: 1rem 1rem; }
+
+.contentButton {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contentTitle {
+  color: #034D2F; }
+
+.contentText {
+  color: #034D2F;
+  font-size: 2em;
+  margin: 0.5em; }
+  @media only screen and (max-width: 600px) {
+    .contentText {
+      font-size: 2em; } }
+
+.contentIcon {
+  margin: 0; }
+
+.mobileServiceHeader {
+  display: none; }
+  @media only screen and (max-width: 1000px) {
+    .mobileServiceHeader {
+      display: block; } }
+
+.desktopServiceHeader {
+  display: block; }
+  @media only screen and (max-width: 1000px) {
+    .desktopServiceHeader {
+      display: none; } }
 
 /*# sourceMappingURL=blocks.css.map */
