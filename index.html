@@ -211,6 +211,8 @@
           <div class="col s12 center">
             <h3><i class="mdi-content-send brown-text"></i></h3>
             <h4>Contact Us</h4>
+
+            <!-- Location Info -->
             <div class="row">
               <div class="col s12 m6">
                 <p class="left-align light">
@@ -222,7 +224,18 @@
                       </div>
 
                       <div class="row">
-                        <a class="waves-effect waves-light myButton btn">View Service Map</a>
+                        <a class="waves-effect waves-light myButton btn modal-trigger" href="#modal1">View Service Map</a>
+
+                        <!-- Modal Structure -->
+                        <div id="modal1" class="modal modal-fixed-footer">
+                          <div class="modal-content">
+                            <h4>Service Map</h4>
+                            <p>Map will go here</p>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                          </div>
+                        </div>
                       </div>
 
                       <div class="row right-align">
@@ -235,6 +248,8 @@
                   </div>
                 </p>
               </div>
+
+              <!-- Contact Form -->
               <div class="col s12 m6 left-align">
                 <div class="row">
                   <form id="contactform" class="col s12" method="POST">

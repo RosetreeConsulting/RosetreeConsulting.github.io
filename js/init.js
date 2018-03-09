@@ -3,7 +3,7 @@
 
     $('.button-collapse').sideNav(options={closeOnClick: true});
     $('.parallax').parallax();
-
+    $('.modal').modal();
     // Used for Mobile Scroll
     $('.scrollspy').scrollSpy(options={scrollOffset:0});
     //Desktop Scroll
