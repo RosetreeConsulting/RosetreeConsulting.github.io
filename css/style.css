@@ -63,6 +63,11 @@
 .input-field .prefix.active {
   color: #034D2F !important; }
 
+.icon-block {
+  box-shadow: 0px 0px 70px 0px rgba(3, 77, 47, 0.45);
+  padding: 2rem;
+  margin: 4rem 2rem; }
+
 /* Custom Stylesheet */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Goudy Bookletter 1911', serif; }
@@ -208,8 +213,20 @@ p {
 @media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0; } }
-.icon-block {
-  padding: 0 15px; }
+#contact-us-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(100, 100, 100, 0.4) 70%, white 90%); }
+
+#contact-us-container {
+  vertical-align: bottom;
+  position: absolute;
+  bottom: 0; }
+
+#contact-us-text {
+  width: 100%;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 6em;
+  color: #034D2F;
+  text-shadow: 2px 0 0 #C0D4C1, -2px 0 0 #C0D4C1, 0 2px 0 #C0D4C1, 0 -2px 0 #C0D4C1, 1px 1px #C0D4C1, -1px -1px 0 #C0D4C1, 1px -1px 0 #C0D4C1, -1px 1px 0 #C0D4C1; }
 
 .icon-block .material-icons {
   font-size: inherit; }

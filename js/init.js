@@ -67,6 +67,19 @@
         }, 500);
       });
 
+      $('#precisionButton').on('click',function(){
+        $('#mainContent').fadeOut(500);
+
+        setTimeout(function() {
+          if ($(window).width() < 960) {
+            window.location.hash = '';
+            window.location.hash = '#services';
+          }
+          $('#mainContent').hide();
+          $('#precisionContent').fadeIn(500);
+        }, 500);
+      });
+
       $('.backButton').on('click', function() {
         var currentContent;
         if ($('#cropContent').css('display')!='none'){
@@ -75,6 +88,8 @@
           currentContent = $('#soilContent');
         } else if ($('#regulationContent').css('display')!='none'){
           currentContent = $('#regulationContent');
+        } else if ($('#precisionContent').css('display')!='none'){
+          currentContent = $('#precisionContent');
         }
 
         currentContent.fadeOut(500);
