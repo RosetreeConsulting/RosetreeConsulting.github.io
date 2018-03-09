@@ -1,9 +1,6 @@
 .icons {
   margin-bottom: 2em;
   display: inline-block; }
-  @media screen and (max-width: 600px) {
-    .icons {
-      display: none; } }
   .icons li {
     display: inline-block;
     padding-right: 2.5em; }
