@@ -16,14 +16,25 @@
          var hash = this.hash;
 
          // animate
-         $('html, body').animate({
-             scrollTop: $(hash).offset().top-50
+         if (hash=='#contact') {
+           $('html, body').animate({
+             scrollTop: $(hash).offset().top-200
            }, 500, function(){
 
              // when done, add hash to url
              // (default click behaviour)
              // window.location.hash = hash;
            });
+         } else {
+           $('html, body').animate({
+             scrollTop: $(hash).offset().top-10
+           }, 500, function(){
+
+             // when done, add hash to url
+             // (default click behaviour)
+             // window.location.hash = hash;
+           });
+         }
 
       });
 
@@ -31,10 +42,10 @@
         $('#mainContent').fadeOut(500);
 
         setTimeout(function() {
-          if ($(window).width() < 960) {
+          // if ($(window).width() < 960) {
             window.location.hash = '';
             window.location.hash = '#services';
-          }
+          // }
           $('#mainContent').hide();
           $('#cropContent').fadeIn(500);
         }, 500);
@@ -45,10 +56,10 @@
         $('#mainContent').fadeOut(500);
 
         setTimeout(function() {
-          if ($(window).width() < 960) {
+          // if ($(window).width() < 960) {
             window.location.hash = '';
             window.location.hash = '#services';
-          }
+          // }
           $('#mainContent').hide();
           $('#soilContent').fadeIn(500);
         }, 500);
@@ -58,10 +69,10 @@
         $('#mainContent').fadeOut(500);
 
         setTimeout(function() {
-          if ($(window).width() < 960) {
+          // if ($(window).width() < 960) {
             window.location.hash = '';
             window.location.hash = '#services';
-          }
+          // }
           $('#mainContent').hide();
           $('#regulationContent').fadeIn(500);
         }, 500);
@@ -71,10 +82,10 @@
         $('#mainContent').fadeOut(500);
 
         setTimeout(function() {
-          if ($(window).width() < 960) {
+          // if ($(window).width() < 960) {
             window.location.hash = '';
             window.location.hash = '#services';
-          }
+          // }
           $('#mainContent').hide();
           $('#precisionContent').fadeIn(500);
         }, 500);
@@ -95,10 +106,10 @@
         currentContent.fadeOut(500);
 
         setTimeout(function() {
-          if ($(window).width() < 960) {
+          // if ($(window).width() < 960) {
             window.location.hash = '';
             window.location.hash = '#services';
-          }
+          // }
           currentContent.hide();
           $('#mainContent').fadeIn(500);
         }, 500);

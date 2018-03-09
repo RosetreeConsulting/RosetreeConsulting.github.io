@@ -197,7 +197,7 @@ p {
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
-    top: 40%;
+    bottom: 0;
   }
   #index-banner .section {
     top: 10%;
@@ -223,9 +223,23 @@ p {
 #contact-us-text {
   width: 100%;
   font-family: 'Goudy Bookletter 1911', serif;
-  font-size: 6em;
+  font-size: 5em;
   color: #034D2F;
   text-shadow: 2px 0 0 #C0D4C1, -2px 0 0 #C0D4C1, 0 2px 0 #C0D4C1, 0 -2px 0 #C0D4C1, 1px 1px #C0D4C1, -1px -1px 0 #C0D4C1, 1px -1px 0 #C0D4C1, -1px 1px 0 #C0D4C1;
+  @media only screen and (max-width : 600px) {
+    font-size: 3em;
+  }
+}
+
+.serviceHeader {
+  width: 100%;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 5em;
+  color: #034D2F;
+  text-shadow: 2px 0 0 #C0D4C1, -2px 0 0 #C0D4C1, 0 2px 0 #C0D4C1, 0 -2px 0 #C0D4C1, 1px 1px #C0D4C1, -1px -1px 0 #C0D4C1, 1px -1px 0 #C0D4C1, -1px 1px 0 #C0D4C1;
+  @media only screen and (max-width : 600px) {
+    font-size: 3em;
+  }
 }
 
 // .icon-block {
